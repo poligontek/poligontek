@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Template Name: Edupath - Online Courses & Education HTML5 Template
+/* Template Name: PoligonTek - Online Courses & Education HTML5 Template
    Author: Shreethemes
    Email: support@shreethemes.in
    Website: https://shreethemes.in
@@ -2474,6 +2474,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-weight: 600;
   line-height: 68px;
   letter-spacing: 1px;
+  width: 200px;
 }
 
 @media (min-width: 1025px) {
@@ -4450,4 +4451,33 @@ html[dir=rtl] .tns-visually-hidden {
 
 .video-modal div{
   height: auto !important;
+}
+
+.contactanos_navbar {
+  background-color: #7C3AED !important;
+  color: white !important;
+
+  border-radius: 25px; /* Hace el botón redondeado */
+  min-width: 180px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px !important;
+
+}
+
+/* Efecto hover (cambia el color de fondo y levanta un poco el botón) */
+.contactanos_navbar:hover {
+  background-color: #6B21A8 !important;
+  transform: translateY(2px);
+  color: white !important;
+}
+
+/* Efecto de active (cuando se presiona, parece que se hunde) */
+.contactanos_navbar:active {
+  background-color: #5B1A93 !important;
+  transform: translateY(4px);
 }

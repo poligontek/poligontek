@@ -39,7 +39,7 @@ export default function GridSidebar() {
 
                     <div className="lg:col-span-7 md:col-span-8 md:text-end">
                         <ul className="tracking-[0.5px] mb-0 inline-flex items-center">
-                            <li className="inline-block text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="/">Edupath</Link></li>
+                            <li className="inline-block text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="/">PoligonTek</Link></li>
                             <li className="inline-block text-slate-500 dark:text-white/60 mx-0.5 ltr:rotate-0 rtl:rotate-180"><FiChevronRight className="align-middle"/></li>
                             <li className="inline-block text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="">Courses</Link></li>
                             <li className="inline-block text-slate-500 dark:text-white/60 mx-0.5 ltr:rotate-0 rtl:rotate-180"><FiChevronRight className="align-middle"/></li>

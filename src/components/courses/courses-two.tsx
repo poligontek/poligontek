@@ -25,7 +25,7 @@ export default function CoursesTwo({item}:{item:any}) {
                         <span className="text-slate-400 text-sm flex items-center ms-3"><FiUsers className="text-slate-900 dark:text-white size-[14px] me-1"/>{item.students} Students</span>
                     </div>
 
-                    <Link to={`/course-detail-two/${item.id}`} className="text-lg hover:text-violet-600 font-medium">{item.title}</Link>
+                    <Link to={`/detalle-de-curso-two/${item.id}`} className="text-lg hover:text-violet-600 font-medium">{item.title}</Link>
 
                     <p className="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
 

@@ -80,7 +80,7 @@ export default function Contactus() {
                         <p className="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
                         
                         <div className="mt-4">
-                            <Link to="tel:+152534-468-854" className="btn btn-link text-violet-600 hover:text-violet-600 after:bg-violet-600 transition duration-500">+152 534-468-854</Link>
+                            <Link to="https://api.whatsapp.com/send/?phone=5492374032946" className="btn btn-link text-violet-600 hover:text-violet-600 after:bg-violet-600 transition duration-500">+152 534-468-854</Link>
                         </div>
                     </div>
                 </div>

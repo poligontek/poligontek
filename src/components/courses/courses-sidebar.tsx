@@ -18,16 +18,16 @@ export default function CoursesSidebar() {
         <div className="p-6 bg-white dark:bg-slate-900 rounded-md shadow shadow-slate-100 dark:shadow-slate-800 sticky top-20">
             <form>
                 <div>
-                    <label htmlFor="searchname" className="font-semibold">Search Course</label>
+                    <label htmlFor="searchname" className="font-semibold">Buscar curso</label>
                     <div className="relative mt-2">
                         <FiSearch className="absolute top-[10px] start-3 size-5"/>
-                        <input name="search" id="searchname" type="text" className="w-full py-2 px-3 border border-slate-100 dark:border-slate-800 focus:border-violet-600/30 dark:focus:border-violet-600/30 bg-transparent focus:outline-none rounded-md h-10 ps-10" placeholder="Search"/>
+                        <input name="search" id="searchname" type="text" className="w-full py-2 px-3 border border-slate-100 dark:border-slate-800 focus:border-violet-600/30 dark:focus:border-violet-600/30 bg-transparent focus:outline-none rounded-md h-10 ps-10" placeholder="Buscar Curso"/>
                     </div>
                 </div>
             </form>
 
             <div className="mt-6">
-                <label className="font-semibold">Categories</label>
+                <label className="font-semibold">Categorías</label>
                 <div className="block">
                     <div className="flex justify-between mt-2">
                         <div className="inline-flex items-center mb-0">

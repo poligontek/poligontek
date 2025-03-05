@@ -31,7 +31,7 @@ export default function IndexTwo() {
             <div className="grid grid-cols-1 text-center mt-12">
                 <span className="text-yellow-400 font-semibold mb-3 uppercase">#OnlineLearning</span>
                 <h1 className="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl text-white mb-5">Find The Best Online Courses <br/> For Your Bright Future</h1>
-                <p className="text-white/50 text-lg max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-white/50 text-lg max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
                 
                 <div className="mt-6">
                     <Link to="" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-yellow-500 text-white">View Courses <i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
@@ -82,7 +82,7 @@ export default function IndexTwo() {
                 <span className="text-violet-600 font-semibold mb-3 uppercase">Categories</span>
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Explore 1500+ Free Education Courses</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
            <Categories/>
@@ -97,14 +97,14 @@ export default function IndexTwo() {
                 <span className="text-violet-600 font-semibold mb-3 uppercase">Courses</span>
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Explore Our Best Courses</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
            <CoursesSlider/>
 
             <div className="grid md:grid-cols-12 grid-cols-1 mt-6">
                 <div className="md:col-span-12 text-center">
-                    <Link to="/grid" className="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">See More Courses <i className="mdi mdi-arrow-right align-middle"></i></Link>
+                    <Link to="/grid" className="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">Ver mas cursos<i className="mdi mdi-arrow-right align-middle"></i></Link>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@ export default function IndexTwo() {
                 <span className="text-violet-600 font-semibold mb-3 uppercase">Services</span>
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Discover Powerful Features</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Features/>
@@ -128,7 +128,7 @@ export default function IndexTwo() {
                 <span className="text-violet-600 font-semibold mb-3 uppercase">Teachers</span>
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Expert Instructors</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
             <Team/>
         </div>
@@ -138,7 +138,7 @@ export default function IndexTwo() {
                 <span className="text-violet-600 font-semibold mb-3 uppercase">Reviews</span>
                 <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What Our Students Say ?</h3>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Client/>

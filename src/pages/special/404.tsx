@@ -25,7 +25,7 @@ export default function Error() {
                             </div>
                         </div>
                         <div className="text-center">
-                            <p className="mb-0 text-slate-400">© {new Date().getFullYear()} Edupath. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <Link to="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+                            <p className="mb-0 text-slate-400">© {new Date().getFullYear()} PoligonTek. PoligonTek. Diseñado y Desarrollado con <i className="mdi mdi-heart text-red-600"></i> por <Link to="https://poligontek.com/" target="_blank" className="text-reset">PoligonTek</Link>.</p>
                         </div>
                     </div>
                 </div>

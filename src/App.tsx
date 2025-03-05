@@ -10,8 +10,8 @@ import List from './pages/courses/list';
 import ListSidebar from './pages/courses/list-sidebar';
 import YoutubeListing from './pages/courses/youtube-listing';
 import VideoListing from './pages/courses/video-listing';
-import CourseDetail from './pages/courses/course-detail';
-import CourseDetailTwo from './pages/courses/course-detail-two';
+import CourseDetail from './pages/courses/detalle-de-curso';
+import CourseDetailTwo from './pages/courses/detalle-de-curso-two.tsx';
 import Aboutus from './pages/aboutus';
 import Features from './pages/features';
 import Pricing from './pages/pricing';
@@ -40,16 +40,16 @@ function App() {
       <Route path='/index-three' element={<IndexThree/>}/>
       <Route path='/index-four' element={<IndexFour/>}/>
       <Route path='/index-five' element={<IndexFive/>}/>
-      <Route path='/grid' element={<Grid/>}/>
-      <Route path='/grid-sidebar' element={<GridSidebar/>}/>
+      <Route path='/cursos' element={<Grid/>}/>
+      <Route path='/cursos-barra' element={<GridSidebar/>}/>
       <Route path='/list' element={<List/>}/>
       <Route path='/list-sidebar' element={<ListSidebar/>}/>
       <Route path='/youtube-listing' element={<YoutubeListing/>}/>
       <Route path='/video-listing' element={<VideoListing/>}/>
-      <Route path='/course-detail' element={<CourseDetail/>}/>
-      <Route path='/course-detail/:id' element={<CourseDetail/>}/>
-      <Route path='/course-detail-two' element={<CourseDetailTwo/>}/>
-      <Route path='/course-detail-two/:id' element={<CourseDetailTwo/>}/>
+      <Route path='/detalle-de-curso' element={<CourseDetail/>}/>
+      <Route path='/detalle-de-curso/:id' element={<CourseDetail/>}/>
+      <Route path='/detalle-de-curso-two' element={<CourseDetailTwo/>}/>
+      <Route path='/detalle-de-curso-two/:id' element={<CourseDetailTwo/>}/>
       <Route path='/aboutus' element={<Aboutus/>}/>
       <Route path='/features' element={<Features/>}/>
       <Route path='/pricing' element={<Pricing/>}/>

@@ -1,7 +1,7 @@
-import { FiCpu, FiFacebook, FiGithub, FiGitlab, FiInstagram, FiLinkedin, FiMail, FiThumbsUp, FiTwitter, FiYoutube } from 'react-icons/fi'
+import { FiCpu, FiDribbble, FiFacebook, FiGithub, FiGitlab, FiInstagram, FiLinkedin, FiMail, FiThumbsUp, FiTwitter, FiYoutube } from 'react-icons/fi'
 import {LiaHtml5, LiaLaptopCodeSolid, LiaMedalSolid, LiaUserCogSolid} from 'react-icons/lia'
 import { BsEmojiSmile } from "react-icons/bs";
-
+import { FaBehance } from "react-icons/fa";
 import { LuNetwork } from "react-icons/lu";
 
 import { MdOutlineSettingsInputAntenna } from "react-icons/md";
@@ -26,7 +26,9 @@ import course6 from './assets/images/course/6.jpg'
 import course7 from './assets/images/course/7.jpg'
 import course8 from './assets/images/course/8.jpg'
 import course9 from './assets/images/course/9.jpg'
-
+import course10 from './assets/images/course/10.jpg'
+import course11 from './assets/images/course/11.jpg'
+import course12 from './assets/images/course/12.jpg'
 
 import team1 from './assets/images/team/1.jpg'
 import team2 from './assets/images/team/2.jpg'
@@ -91,41 +93,199 @@ export const coursesData = [
     //     name:'Calvin Carlo'
     // },
     {
-        id:1,
-        image:course1,
-        tag1:'Desarrollo Web',
-        tag2:'Event',
-        amount:65,
-        lessons:4,
-        students:49,
-        title:'Fundamentos de Programación (Intensivo)',
-        desc:'Domina las bases de la programación en 1 mes con clases personalizadas y prácticas. Este curso es intensivo de 1 mes',
-        user:team1,
-        name:'Fabian Gonzalez',
-        descripcion: 'asdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsad<br/>asasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasas<br/>dasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadas'
-    },
-    {
         id:2,
         image:course2,
         tag1:'Free',
         tag2:'Event',
-        amount:35,
+        amount:19,
+        lessons:10,
+        students:49,
+        title:'Fundamentos de Programación (Intensivo)',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team2,
+        name:'Calvin Carlo'
+    },
+    {
+        id:3,
+        image:course3,
+        tag1:'Free',
+        tag2:'Event',
+        amount:29,
         lessons:10,
         students:49,
         title:'Fundamentos de Programación',
-        desc:'Domina las bases de la programación en 4 meses con clases personalizadas y prácticas. Este curso dura 4 meses',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team3,
+        name:'Calvin Carlo'
+    },
+    {
+        id:4,
+        image:course4,
+        tag1:'Free',
+        tag2:'Event',
+        amount:15,
+        lessons:10,
+        students:49,
+        title:'Back-end Development Course',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team4,
+        name:'Calvin Carlo'
+    },
+    {
+        id:5,
+        image:course5,
+        tag1:'Free',
+        tag2:'Event',
+        amount:24,
+        lessons:10,
+        students:49,
+        title:'Front-end Development Course',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team5,
+        name:'Calvin Carlo'
+    },
+    {
+        id:6,
+        image:course6,
+        tag1:'Free',
+        tag2:'Event',
+        amount:29,
+        lessons:10,
+        students:49,
+        title:'Full stack Project in Nextjs Course',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team6,
+        name:'Calvin Carlo'
+    },
+    {
+        id:7,
+        image:course7,
+        tag1:'Free',
+        tag2:'Event',
+        amount:15,
+        lessons:10,
+        students:49,
+        title:'Why Is Education So Famous?',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team7,
+        name:'Calvin Carlo'
+    },
+    {
+        id:8,
+        image:course8,
+        tag1:'Free',
+        tag2:'Event',
+        amount:24,
+        lessons:10,
+        students:49,
+        title:'Difficult Things About Education.',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team8,
+        name:'Calvin Carlo'
+    },
+    {
+        id:9,
+        image:course9,
+        tag1:'Free',
+        tag2:'Event',
+        amount:29,
+        lessons:10,
+        students:49,
+        title:'Online Courses from PoligonTek',
+        desc:'The phrasal sequence of the is now so many campaign',
         user:team1,
-        name:'Fabian Gonzalez'
-    }
+        name:'Calvin Carlo'
+    },
+    {
+        id:10,
+        image:course10,
+        tag1:'Free',
+        tag2:'Event',
+        amount:15,
+        lessons:10,
+        students:49,
+        title:'Financial Investing Course',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team2,
+        name:'Calvin Carlo'
+    },
+    {
+        id:11,
+        image:course11,
+        tag1:'Free',
+        tag2:'Event',
+        amount:24,
+        lessons:10,
+        students:49,
+        title:'Learning Digital Marketing',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team3,
+        name:'Calvin Carlo'
+    },
+    {
+        id:12,
+        image:course12,
+        tag1:'Free',
+        tag2:'Event',
+        amount:29,
+        lessons:10,
+        students:49,
+        title:'Master the Fundamentals of Math',
+        desc:'The phrasal sequence of the is now so many campaign',
+        user:team4,
+        name:'Calvin Carlo'
+    },
 ]
 
 export const teamData = [
     {
         image:team1,
-        name:'Fabian Gonzalez',
-        position:'Ingeniero de Software',
+        name:'Megan Cade',
+        position:'UI/UX Expert',
         social:[FiFacebook, FiInstagram, FiLinkedin]
-    }
+    },
+    {
+        image:team2,
+        name:'Ramon Gibson',
+        position:'Science Teacher',
+        social:[FiFacebook, FiInstagram, FiLinkedin]
+    },
+    {
+        image:team3,
+        name:'Stella Robinson',
+        position:'Math Specialist',
+        social:[FiFacebook, FiInstagram, FiLinkedin]
+    },
+    {
+        image:team4,
+        name:'Paul Phelan',
+        position:'Assistant Teacher',
+        social:[FiFacebook, FiInstagram, FiLinkedin]
+    },
+    {
+        image:team5,
+        name:'Nancy Hall',
+        position:'UI/UX Expert',
+        social:[FiFacebook, FiInstagram, FiLinkedin]
+    },
+    {
+        image:team6,
+        name:'Wendy Buckley',
+        position:'Science Teacher',
+        social:[FiFacebook, FiInstagram, FiLinkedin]
+    },
+    {
+        image:team7,
+        name:'Sammy Adkins',
+        position:'Math Specialist',
+        social:[FiFacebook, FiInstagram, FiLinkedin]
+    },
+    {
+        image:team8,
+        name:'Cornelia Jefferson',
+        position:'Assistant Teacher',
+        social:[FiFacebook, FiInstagram, FiLinkedin]
+    },
 ]
 
 export const blogData = [
@@ -195,19 +355,34 @@ export const blogData = [
 ]
 
 export const footerSocial = [
-
     {
-        link:'https://www.facebook.com/poligontek',
+        link:'https://dribbble.com/shreethemes',
+        icon:FiDribbble
+    },
+    {
+        link:'https://www.behance.net/shreethemes',
+        icon:FaBehance
+    },
+    {
+        link:'http://linkedin.com/company/shreethemes',
+        icon:FiLinkedin
+    },
+    {
+        link:'https://www.facebook.com/shreethemes',
         icon:FiFacebook
     },
     {
-        link:'https://www.instagram.com/poligontek',
+        link:'https://www.instagram.com/shreethemes',
         icon:FiInstagram
     },
     {
-        link:'mailto:contacto@poligontek.com',
+        link:'https://twitter.com/shreethemes',
+        icon:FiTwitter
+    },
+    {
+        link:'mailto:support@shreethemes.in',
         icon:FiMail
-    }
+    },
 ]
 
 export const footerLink1 = [
@@ -277,43 +452,48 @@ export const counterData = [
 
 export const clientData = [
     {
-        image: team1,
-        name: 'Bruno Sentinelli',
-        position: 'Estudiante',
-        desc: `"Desde la primera clase noté el enfoque práctico y orientado a resultados. La mejor inversión en mi educación."`,
-        rate: ['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
+        image:team1,
+        name:'Megan Cade',
+        position:'Student',
+        desc:`" Online education has allowed me to balance work and study easily. The flexibility of choosing when to study has made it a perfect fit for my busy schedule! "`,
+        rate:['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
     },
     {
-        image: team2,
-        name: 'Lucas Esteves',
-        position: 'Estudiante',
-        desc: `"El contenido es claro y preciso, cada tema tiene su aplicación práctica, lo que hace que realmente aprendas."`,
-        rate: ['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
+        image:team2,
+        name:'Ramon Gibson',
+        position:'Student',
+        desc:`" I was surprised by how interactive online courses can be. The live discussions and group projects kept me engaged, and I felt connected to my classmates. "`,
+        rate:['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
     },
     {
-        image: team3,
-        name: 'Malena Dimitri',
-        position: 'Estudiante',
-        desc: `"Nunca había aprendido de forma tan dinámica. Los proyectos y ejercicios ayudan a reforzar cada concepto."`,
-        rate: ['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
+        image:team3,
+        name:'Stella Robinson',
+        position:'Student',
+        desc:`" Studying online saved me a lot of money, and I didn't have to commute. The quality of the courses was fantastic, and I could learn at my own pace. "`,
+        rate:['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
     },
     {
-        image: team4,
-        name: 'Mateo Disciascio',
-        position: 'Estudiante',
-        desc: `"La metodología es perfecta para quienes quieren aprender desde cero sin sentirse abrumados."`,
-        rate: ['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
+        image:team4,
+        name:'Paul Phelan',
+        position:'Student',
+        desc:`" Online learning requires discipline, but it's worth it. I had to work on time management, but the flexibility and quality of the content made it rewarding. "`,
+        rate:['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
     },
     {
-        image: team8,
-        name: 'Matias Morel',
-        position: 'Estudiante',
-        desc: `"Nunca pensé que podía aprender a programar tan rápido. Todo está organizado de forma clara y cada módulo suma para avanzar con confianza."`,
-        rate: ['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
-    }
-   
-];
-
+        image:team5,
+        name:'Christa Smith',
+        position:'Student',
+        desc:`" Taking online courses has helped me grow professionally. I could apply what I learned immediately at work, and the knowledge I gained was practical and up-to-date. "`,
+        rate:['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
+    },
+    {
+        image:team6,
+        name:'Calvin Carlo',
+        position:'Student',
+        desc:`" The biggest advantage of online education is convenience, but it requires self-motivation. If you're committed, it's a great way to advance your skills. "`,
+        rate:['mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star','mdi mdi-star']
+    },
+]
 
 export const faqData = [
     {
@@ -361,7 +541,7 @@ export const youtubeList = [
         lessons:10,
         students:49,
         title:'Fundamentos de Programación (Intensivo)',
-        desc:`Domina las bases de la programación en 1 mes con clases personalizadas y prácticas.`,
+        desc:`The phrasal sequence of the is now so many campaign`,
         user:team2,
         name:'Calvin Carlo'
     },

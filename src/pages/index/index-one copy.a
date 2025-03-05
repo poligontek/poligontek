@@ -11,9 +11,10 @@ import Footer from '../../components/footer'
 import ScrollToTop from '../../components/scroll-to-top'
 
 import bg from '../../assets/images/bg/bg.png'
-
+import cta from '../../assets/images/bg/bg.png'
 import hero from '../../assets/images/hero/1.png'
-
+import hero2 from '../../assets/images/hero/2.png'
+import hero4 from '../../assets/images/course/4.jpg'
 import team1 from '../../assets/images/team/1.jpg'
 import team2 from '../../assets/images/team/2.jpg'
 import team3 from '../../assets/images/team/3.jpg'
@@ -24,7 +25,7 @@ import { FiMonitor } from 'react-icons/fi'
 
 import { coursesData } from '../../data'
 import Client from '../../components/client'
-
+import Faq from '../../components/faq'
 
 interface CoursesData {
     id: number;
@@ -41,6 +42,9 @@ interface CoursesData {
 }
 
 export default function IndexOne() {
+    function setOpenModal(arg0: boolean): void {
+        throw new Error('Function not implemented.')
+    }
 
     return (
         <>
@@ -56,7 +60,7 @@ export default function IndexOne() {
                             </p>
 
                             <div className="mt-6">
-                                <Link to="/cursos" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Cursos<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>          <Link to="https://api.whatsapp.com/send/?phone=5492374032946" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Contacto<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
+                                <Link to="" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Cursos<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>          <Link to="" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Contacto<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
                             </div>
 
                         </div>
@@ -138,18 +142,89 @@ export default function IndexOne() {
                 </div>
 
 
+                <div className="container relative md:mt-24 mt-16">
+            <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                <div className="lg:col-span-6 md:col-span-7">
+                    <div className="relative">
+                        <div className="relative md:shrink-0 lg:mx-0 mx-5">
+                            <img className="object-cover md:w-96 w-84 h-[500px] rounded-lg shadow-md dark:shadow-gyay-700" src={hero4} alt=""/>
+                        </div>
+
+                        <div className="absolute bottom-10 lg:end-6 end-0">
+                            <div className="relative z-1 top-10 xl:text-start lg:text-end text-end">
+                                <Link to="#!" onClick={() => setOpenModal(true)} className="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-violet-600 text-white">
+                                    <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
+                                </Link>
+                            </div>
+
+                            <div className="relative md:shrink-0">
+                                <img className="object-cover size-48 rounded-lg shadow-md dark:shadow-gyay-700" src={hero2} alt=""/>
+                            </div>
+                        </div>
+
+                        <div className="absolute md:top-16 top-12 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 z-2 mover">
+                            <h5 className="font-semibold mb-3">Our Instrunctors</h5>
+                            
+                            <ul className="list-none relative">
+                                <li className="inline-block relative"><Link to=""><img src={team1} className="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""/></Link></li>
+                                <li className="inline-block relative -ms-4"><Link to=""><img src={team2} className="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""/></Link></li>
+                                <li className="inline-block relative -ms-4"><Link to=""><img src={team3} className="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""/></Link></li>
+                                <li className="inline-block relative -ms-4"><Link to=""><img src={team4} className="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""/></Link></li>
+                                <li className="inline-block relative -ms-4"><Link to=""><img src={team5} className="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""/></Link></li>
+                                <li className="inline-block relative -ms-4"><Link to="" className="size-9 table-cell tracking-wide align-middle text-base text-center rounded-full bg-violet-600 text-white hover:z-1 hover:scale-105 transition-all duration-500"><i className="mdi mdi-plus"></i></Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="lg:col-span-6 md:col-span-5">
+                    <h4 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Questions & Answers</h4>
+                    <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
+
+                    <Faq/>
+                </div>
+            </div>
+        </div>
 
 
 
                 <div className="container relative lg:mt-24 mt-16">
             <div className="grid grid-cols-1 pb-8 text-center">
-                <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">¿Qué dicen nuestros estudiantes?</h3>
-                <p className="text-slate-400 max-w-xl mx-auto">Descubrí cómo fueron sus experiencias y resultados.</p>
+                <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What Our Students Say ?</h3>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
             <Client/>
         </div>
 
 
+        <div className="container-fluid relative overflow-hidden md:mt-24 mt-16">
+                    <div className="bg-violet-600 md:pt-0 pt-16 bg-no-repeat bg-top bg-cover" style={{ backgroundImage: `url(${cta})` }}>
+                        <div className="container relative">
+                            <div className="grid md:grid-cols-12 grid-cols-1 gap-6 items-center">
+                                <div className="lg:col-span-8 md:col-span-7">
+                                    <div className="md:text-start text-center z-1">
+                                        <h3 className="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">¡Envianos un mensaje!</h3>
+                                        <p className="text-white/50 max-w-xl mt-1">Envianos una pregunta que te contestaremos de inmediato.</p>
+                                    </div>
+
+                                    <div className="mt-4">
+                                        <form className="relative max-w-2xl">
+                                            <input type="email" id="subscribe" name="email" className="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-white rounded-full bg-violet-700 shadow shadow-slate-100/20 dark:shadow-slate-800/20" placeholder="Tu mensaje:" />
+                                            <button type="submit" className="h-12 px-6 tracking-wide items-center justify-center font-medium bg-yellow-500 text-white rounded-full absolute top-[1px] end-[1px]">Envianos un mensaje</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div className="lg:col-span-4 md:col-span-5">
+                                    <div className="relative">
+                                        <img src={hero2} className="mx-auto relative z-2" alt="" />
+                                        <div className="absolute overflow-hidden size-[350px] bg-gradient-to-tl from-violet-600/20 to-fuchsia-600 bottom-0 translate-x-1/2 start-1/2 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 z-1 shadow-md shadow-red-500/10 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
  
             </section>

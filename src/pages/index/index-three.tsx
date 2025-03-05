@@ -47,7 +47,7 @@ export default function IndexThree() {
 
                          <br/> Through <span className="after:absolute after:end-0 after:start-0 after:bottom-3 after:-rotate-6 after:h-2 after:w-auto after:rounded-md after:bg-yellow-400/50 after:-z-1 z-1 relative">1-on-1</span> <br/> Online Classes</h1>
                     
-                    <p className="text-white/50 text-lg max-w-xl">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                    <p className="text-white/50 text-lg max-w-xl">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
                     
                     <div className="mt-6">
                         <form className="relative max-w-xl">
@@ -67,7 +67,7 @@ export default function IndexThree() {
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Discover Powerful Features</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Features/>
@@ -77,7 +77,7 @@ export default function IndexThree() {
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Explore 1500+ Free Education Courses</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Categories/>
@@ -91,7 +91,7 @@ export default function IndexThree() {
             <div className="grid grid-cols-1 pb-8 text-center">
                 <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What Our Students Say ?</h3>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
             <Client/>
         </div>
@@ -100,7 +100,7 @@ export default function IndexThree() {
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Expert Instructors</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Team/>
@@ -109,7 +109,7 @@ export default function IndexThree() {
         <div className="container relative md:mt-24 mt-16">
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Blogs Or News</h4>
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
             <Blog/>
         </div>

@@ -20,9 +20,9 @@ export default function AboutOne({title}:{title:any}) {
 
                     <div className="absolute bottom-10 lg:end-6 end-0">
                         <div className="relative z-1 top-10 xl:text-start lg:text-end text-end">
-                            <Link to="#!"  onClick={() => setOpenModal(true)} className="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-violet-600 text-white">
-                                <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                            </Link>
+                            {/* <Link to="#!"  onClick={() => setOpenModal(true)} className="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-violet-600 text-white"> */}
+                            {/* <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i> */}
+                            {/* </Link> */}
                         </div>
                         <Modal dismissible show={openModal} onClose={() => setOpenModal(false)} position="center" className="video-modal bg-[#000000c4] z-[999999]">
                             <Modal.Body className="p-0 h-auto">

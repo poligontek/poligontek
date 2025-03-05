@@ -69,7 +69,7 @@ export default function CourseDetailTwo() {
                 
                 <li className="inline-flex items-center mt-2 mx-3">
                     <FiShoppingCart className="text-lg text-white"/>
-                    <Link to="https://1.envato.market/edupath" target="_blank" className="text-white ms-2">Enroll Now</Link>
+                    <Link to="https://1.envato.market/PoligonTek" target="_blank" className="text-white ms-2">Enroll Now</Link>
                 </li>
             </ul>
         </div>
@@ -261,9 +261,9 @@ export default function CourseDetailTwo() {
 
         <div className="container relative md:mt-24 mt-16">
             <div className="grid grid-cols-1 pb-6 text-center">
-                <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Recent Courses</h4>
+                <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Cursos Recientes</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">

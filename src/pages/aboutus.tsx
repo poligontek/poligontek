@@ -41,7 +41,7 @@ export default function Aboutus() {
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Discover Powerful Features</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Features/>
@@ -55,7 +55,7 @@ export default function Aboutus() {
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Expert Instructors</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Team/>
@@ -65,7 +65,7 @@ export default function Aboutus() {
             <div className="grid grid-cols-1 pb-8 text-center">
                 <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What Our Students Say ?</h3>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Client/>

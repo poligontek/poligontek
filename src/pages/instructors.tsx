@@ -68,7 +68,7 @@ export default function Instructors() {
 
                 <div className="lg:col-span-6 md:col-span-5">
                     <h4 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Questions & Answers</h4>
-                    <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                    <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
 
                     <Faq/>
                 </div>

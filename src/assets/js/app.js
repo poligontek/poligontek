@@ -1,4 +1,4 @@
-/* Template Name: Edupath - Online Courses & Education HTML5 Template
+/* Template Name: PoligonTek - Online Courses & Education HTML5 Template
    Author: Shreethemes
    Email: support@shreethemes.in
    Website: https://shreethemes.in

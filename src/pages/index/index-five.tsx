@@ -63,7 +63,7 @@ export default function IndexFive() {
                 <div className="lg:col-span-7">
                     <h6 className="text-yellow-500 font-semibold mb-3 uppercase">100% Satisfaction Guarantee</h6>
                     <h1 className="font-bold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Learn Product Design <br/> in <span className="bg-gradient-to-l from-fuchsia-500 to-violet-600 text-transparent bg-clip-text">16 weeks</span></h1>
-                    <p className="text-slate-400 text-lg max-w-xl">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                    <p className="text-slate-400 text-lg max-w-xl">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
                     
                     <div className="mt-6">
                         <Link to="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Explore Courses <i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
@@ -131,7 +131,7 @@ export default function IndexFive() {
         <div className="container relative">
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Explore Our Best Courses</h4>
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
             
             <div className="grid lg:grid-cols-2 mt-6 gap-6">
@@ -152,7 +152,7 @@ export default function IndexFive() {
         <div className="container relative lg:mt-24 mt-16">
             <div className="grid grid-cols-1 pb-8 text-center">
                 <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What Our Students Say ?</h3>
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
             <Client/>
         </div>
@@ -194,7 +194,7 @@ export default function IndexFive() {
 
                 <div className="lg:col-span-6 md:col-span-5">
                     <h4 className="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Questions & Answers</h4>
-                    <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                    <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
 
                     <Faq/>
                 </div>
@@ -205,7 +205,7 @@ export default function IndexFive() {
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Expert Instructors</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Team/>
@@ -215,7 +215,7 @@ export default function IndexFive() {
             <div className="grid grid-cols-1 pb-6 text-center">
                 <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Blogs Or News</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <Blog/>

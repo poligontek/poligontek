@@ -23,17 +23,17 @@ export default function CoursesOne({item}:any) {
 
             <div className="p-6">
                 <div className="flex mb-3">
-                    <span className="text-slate-400 text-sm flex items-center"><FiBook className="text-slate-900 dark:text-white size-[14px] me-1"/>{item.lessons} Lessons</span>
-                    <span className="text-slate-400 text-sm flex items-center ms-3"><FiUsers className="text-slate-900 dark:text-white size-[14px] me-1"/>{item.students} Students</span>
+                    <span className="text-slate-400 text-sm flex items-center"><FiBook className="text-slate-900 dark:text-white size-[14px] me-1"/>{item.lessons} Clases</span>
+                    <span className="text-slate-400 text-sm flex items-center ms-3"><FiUsers className="text-slate-900 dark:text-white size-[14px] me-1"/>{item.students} Estudiantes</span>
                 </div>
 
-                <Link to={`/course-detail/${item.id}`} className="text-lg hover:text-violet-600 font-medium">{item.title}</Link>
+                <Link to={`/detalle-de-curso/${item.id}`} className="text-lg hover:text-violet-600 font-medium">{item.title}</Link>
 
                 <p className="text-slate-400 mt-2">{item.desc}</p>
 
                 <div className="flex justify-between mt-3">
                     <span className="flex items-center"><img src={item.user} className="size-8 rounded-full shadow shadow-slate-100 dark:shadow-slate-800 me-2" alt=""/> <Link to="" className="hover:text-violet-600 font-medium"> {item.name}</Link></span>
-                    <Link to="#" className="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
+                    <Link to="#" className="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Ver Curso <i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
                 </div>
             </div>
         </div>

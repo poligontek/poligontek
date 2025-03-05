@@ -23,7 +23,7 @@ export default function YoutubeListing() {
 
                     <div className="lg:col-span-7 md:col-span-8 md:text-end">
                         <ul className="tracking-[0.5px] mb-0 inline-flex items-center">
-                            <li className="inline-block text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="/">Edupath</Link></li>
+                            <li className="inline-block text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="/">PoligonTek</Link></li>
                             <li className="inline-block text-slate-500 dark:text-white/60 mx-0.5 ltr:rotate-0 rtl:rotate-180"><FiChevronRight className="align-middle"/></li>
                             <li className="inline-block text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="">Courses</Link></li>
                             <li className="inline-block text-slate-500 dark:text-white/60 mx-0.5 ltr:rotate-0 rtl:rotate-180"><FiChevronRight className="align-middle"/></li>
@@ -60,7 +60,7 @@ export default function YoutubeListing() {
                                                 <span className="text-slate-400 text-sm flex items-center ms-3"><FiUsers className="text-slate-900 dark:text-white size-[14px] me-1"/>{item.students} Students</span>
                                             </div>
                 
-                                            <Link to="/course-detail" className="text-lg hover:text-violet-600 font-medium">{item.title}</Link>
+                                            <Link to="/detalle-de-curso" className="text-lg hover:text-violet-600 font-medium">{item.title}</Link>
                 
                                             <p className="text-slate-400 mt-2">{item.desc}</p>
                 

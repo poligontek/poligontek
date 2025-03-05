@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom'
 
 import Navbar from '../../components/navbar/navbar'
 import CoursesOne from '../../components/courses/courses-one'
-import Newsletter from '../../components/newsletter'
+// import Newsletter from '../../components/newsletter'
 import Footer from '../../components/footer'
 import ScrollToTop from '../../components/scroll-to-top'
 
 import { FiChevronRight } from 'react-icons/fi'
 
 import { coursesData } from '../../data'
+import Client from '../../components/client'
 
 interface CoursesData{
     id: number;
@@ -33,16 +34,16 @@ export default function Grid() {
             <div className="container relative">
                 <div className="grid md:grid-cols-12 grid-cols-1 gap-2 items-center">
                     <div className="lg:col-span-5 md:col-span-4">
-                        <h3 className="text-2xl md:leading-normal leading-normal font-semibold">Courses</h3>
+                        <h3 className="text-2xl md:leading-normal leading-normal font-semibold">Cursos</h3>
                     </div>
 
                     <div className="lg:col-span-7 md:col-span-8 md:text-end">
                         <ul className="tracking-[0.5px] mb-0 inline-flex items-center">
-                            <li className="inline-block items-center text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="/">Edupath</Link></li>
+                            <li className="inline-block items-center text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="/">PoligonTek</Link></li>
                             <li className="inline-block items-center text-slate-500 dark:text-white/60 mx-0.5 ltr:rotate-0 rtl:rotate-180"><FiChevronRight className="align-middle"/></li>
-                            <li className="inline-block items-center text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="">Courses</Link></li>
+                            <li className="inline-block items-center text-slate-400 dark:text-white/60 duration-500 ease-in-out hover:text-violet-600 dark:hover:text-white"><Link to="">Cursos</Link></li>
                             <li className="inline-block items-center text-slate-500 dark:text-white/60 mx-0.5 ltr:rotate-0 rtl:rotate-180"><FiChevronRight className="align-middle"/></li>
-                            <li className="inline-block items-center text-violet-600 dark:text-white" aria-current="page">Grid Courses</li>
+                            <li className="inline-block items-center text-violet-600 dark:text-white" aria-current="page">Cursos Grilla</li>
                         </ul>
                     </div>
                 </div>
@@ -92,7 +93,11 @@ export default function Grid() {
             </div>
 
             <div className="container relative md:mt-24 mt-16">
-                <Newsletter/>
+                {/* <Newsletter/> */}
+                <Client/>
+    
+
+
             </div>
         </section>
 

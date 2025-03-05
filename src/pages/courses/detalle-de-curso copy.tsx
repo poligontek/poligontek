@@ -39,32 +39,32 @@ export default function CourseDetail() {
                     <ul className="tracking-[0.5px] mb-0 inline-block mt-4">
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiClock className="text-lg"/>
-                            <span className="text-slate-400 ms-2">10 Weeks</span>
+                            <span className="text-slate-400 ms-2">4 Semanas</span>
                         </li>
     
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiWifi className="text-lg"/>
-                            <span className="text-slate-400 ms-2">All Levels</span>
+                            <span className="text-slate-400 ms-2">Principiante</span>
                         </li>
                         
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiBook className="text-lg"/>
-                            <span className="text-slate-400 ms-2">16 Lessons</span>
+                            <span className="text-slate-400 ms-2">16 lecciones</span>
                         </li>
                         
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiBox className="text-lg"/>
-                            <span className="text-slate-400 ms-2">0 Quiz</span>
+                            <span className="text-slate-400 ms-2">4 Quiz</span>
                         </li>
                         
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiBookOpen className="text-lg"/>
-                            <span className="text-slate-400 ms-2">5 Students</span>
+                            <span className="text-slate-400 ms-2">56 estudiantes</span>
                         </li>
                         
                         <li className="inline-flex items-center mt-2">
                             <FiShoppingCart className="text-lg"/>
-                            <Link to="https://1.envato.market/edupath" target="_blank" className="text-violet-600 ms-2">Enroll Now</Link>
+                            <Link to="https://1.envato.market/PoligonTek" target="_blank" className="text-violet-600 ms-2">Enroll Now</Link>
                         </li>
                     </ul>
                 </div>
@@ -81,9 +81,12 @@ export default function CourseDetail() {
 
             <div className="md:flex justify-center mt-10">
                 <div className="lg:w-3/5">
-                    <h5 className="text-2xl font-semibold mb-4">Overview</h5>
+                    <h5 className="text-2xl font-semibold mb-4">{data?.title ? data?.title : 'Titulo del curso'}</h5>
 
-                    <p className="text-slate-400 mb-3">Ooh, name it after me! Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Why would I want to know that? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.</p>
+                <p>
+                {data?.descripcion ? data?.descripcion : 'Descripción del curso'}</p> 
+                
+                   <p className="text-slate-400 mb-3">Ooh, name it after me! Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. Why would I want to know that? What's with you kids? Every other day it's food, food, food. Alright, I'll get you some stupid food.</p>
                     <p className="text-slate-400 mb-3">It's a T. It goes “tuh”. You seem malnourished. Are you suffering from intestinal parasites? I suppose I could part with 'one' and still be feared… And I'd do it again! And perhaps a third time! But that would be it.</p>
                     <p className="text-slate-400 mb-3">I'm just glad my fat, ugly mama isn't alive to see this day. I can explain. It's very valuable. I barely knew Philip, but as a clergyman I have no problem telling his most intimate friends all about him.</p>
                     <p className="text-slate-400 mb-3">Bender, we're trying our best. Kif might! You can crush me but you can't crush my spirit! Kif, I have mated with a woman. Inform the men. I'm Santa Claus!</p>
@@ -248,9 +251,9 @@ export default function CourseDetail() {
 
         <div className="container relative md:mt-24 mt-16">
             <div className="grid grid-cols-1 pb-6 text-center">
-                <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Recent Courses</h4>
+                <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Cursos Recientes</h4>
 
-                <p className="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                <p className="text-slate-400 max-w-xl mx-auto">Aprendé con clases flexibles y personalizadas. Creá tu futuro</p>
             </div>
 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
