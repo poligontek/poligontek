@@ -68,7 +68,7 @@ export default function IndexOne() {
                                 <div className="overflow-hidden after:content-[''] after:absolute after:size-10 after:bg-violet-600/20 after:top-0 after:start-0 after:-z-1 after:rounded-lg after:animate-[spin_10s_linear_infinite]"></div>
 
                                 <div className="absolute md:bottom-16 bottom-12 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 z-2 mover">
-                                    <h5 className="text-lg font-medium mb-3">Our Instrunctors</h5>
+                                    <h5 className="text-lg font-medium mb-3">Nuestros Alumnos</h5>
 
                                     <ul className="list-none relative">
                                         <li className="inline-block relative"><Link to="#"><img src={team1} className="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt="" /></Link></li>
@@ -86,7 +86,7 @@ export default function IndexOne() {
                                             <FiMonitor className="h-6 w-6" />
                                         </div>
                                         <div className="flex-1">
-                                            <span className="text-slate-400">Online Course</span>
+                                            <span className="text-slate-400">Casos de éxito</span>
                                             <p className="text-xl font-bold"><Counter className="counter-value" value={100}>5</Counter>+</p>
                                         </div>
                                     </div>

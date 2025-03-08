@@ -43,7 +43,7 @@ export default function FaqAbout() {
                 </div>
 
                 <div className="absolute md:top-16 top-12 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 z-2 mover">
-                    <h5 className="font-semibold mb-3">Our Instrunctors</h5>
+                    <h5 className="font-semibold mb-3">Nuestros Alumnos</h5>
                     
                     <ul className="list-none relative">
                         <li className="inline-block relative"><Link to=""><img src={team1} className="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""/></Link></li>
