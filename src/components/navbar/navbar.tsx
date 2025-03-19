@@ -61,7 +61,7 @@ export default function Navbar({navlight,tagline}:{navlight:any, tagline:any}) {
                         <Link to='' className={`navbar-toggle ${toggle ? 'open' : ''}`} id="isToggle" onClick={toggleMenu}>
                             <div className="lines">
                                 <span></span>
-                                <span></span>Usefull Links
+                                <span></span>
                                 <span></span>
                             </div>
                         </Link>
@@ -87,11 +87,13 @@ export default function Navbar({navlight,tagline}:{navlight:any, tagline:any}) {
                             <Link to="/cursos">Cursos</Link>
                         
                         </li>
-
-                      
+                        <li>
+                        <Link to="https://api.whatsapp.com/send/?phone=5492374032946"  className="contactanos_navbar">Contacto</Link>
+                        </li>
+                    
+                  
                 
-                        <li><Link to="https://api.whatsapp.com/send/?phone=5492374032946" className="sub-menu-item contactanos_navbar">Contacto </Link></li>
-                    </ul>
+                  </ul>
                 </div>
             </div>
         </nav>

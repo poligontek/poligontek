@@ -94,28 +94,36 @@ export const coursesData = [
         id:1,
         image:course1,
         tag1:'Desarrollo Web',
-        tag2:'Event',
+        tag2:'Curso',
         amount:65,
         lessons:4,
         students:49,
+        quizzes: 5,
+        knowledge: 'Principiante',
         title:'Fundamentos de Programación (Intensivo)',
         desc:'Domina las bases de la programación en 1 mes con clases personalizadas y prácticas. Este curso es intensivo de 1 mes',
         user:team1,
         name:'Fabian Gonzalez',
-        descripcion: 'asdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsad<br/>asasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasas<br/>dasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadas'
+        descripcion: '<b>asdasd</b>sadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsad<br/>asasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasas<br/>dasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadas',
+        linkinscribe: 'https://api.whatsapp.com/send/?phone=5492374032946'
     },
     {
         id:2,
         image:course2,
-        tag1:'Free',
-        tag2:'Event',
-        amount:35,
-        lessons:10,
-        students:49,
+        tag1:'Desarrollo Web',
+        tag2:'Curso',
+        amount:65,
+        lessons:4,
+        students:34,
+        quizzes: 5,
+        knowledge: 'Principiante',
         title:'Fundamentos de Programación',
         desc:'Domina las bases de la programación en 4 meses con clases personalizadas y prácticas. Este curso dura 4 meses',
         user:team1,
-        name:'Fabian Gonzalez'
+        name:'Fabian Gonzalez',
+        descripcion: '<b>asdasd</b>sadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsad<br/>asasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasas<br/>dasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadasasdasdsadas',
+       
+       linkinscribe: 'https://api.whatsapp.com/send/?phone=5492374032946'
     }
 ]
 

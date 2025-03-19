@@ -4458,11 +4458,12 @@ html[dir=rtl] .tns-visually-hidden {
   color: white !important;
 
   border-radius: 25px; /* Hace el botón redondeado */
-  min-width: 180px;
+  width: 140px;
+  height: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  display: inline-block;
+padding-bottom: 50px !important;
   text-align: center;
   text-decoration: none;
   margin: 2px !important;
@@ -4471,7 +4472,7 @@ html[dir=rtl] .tns-visually-hidden {
 
 /* Efecto hover (cambia el color de fondo y levanta un poco el botón) */
 .contactanos_navbar:hover {
-  background-color: #6B21A8 !important;
+  background-color: #eedaff !important;
   transform: translateY(2px);
   color: white !important;
 }

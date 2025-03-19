@@ -40,8 +40,8 @@ function App() {
       <Route path='/index-three' element={<IndexThree/>}/>
       <Route path='/index-four' element={<IndexFour/>}/>
       <Route path='/index-five' element={<IndexFive/>}/>
-      <Route path='/cursos' element={<Grid/>}/>
-      <Route path='/cursos-barra' element={<GridSidebar/>}/>
+      <Route path='/cursos-sin-barra' element={<Grid/>}/>
+      <Route path='/cursos' element={<GridSidebar/>}/>
       <Route path='/list' element={<List/>}/>
       <Route path='/list-sidebar' element={<ListSidebar/>}/>
       <Route path='/youtube-listing' element={<YoutubeListing/>}/>

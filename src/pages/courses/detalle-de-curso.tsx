@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link, useParams } from 'react-router-dom'
+import parse from 'html-react-parser'
 
 import team1 from '../../assets/images/team/2.jpg'
 import course1 from '../../assets/images/course/1.jpg'
@@ -26,10 +27,10 @@ export default function CourseDetail() {
         <div className="container">
             <div className="md:flex justify-center">
                 <div className="lg:w-3/5">
-                    <h3 className="text-3xl leading-normal font-medium">{data?.title ? data?.title : 'Become a Professional Graphic Designer'}</h3>
+                    <h3 className="text-3xl leading-normal font-medium">{data?.title ? data?.title : 'Titulo del curso'}</h3>
                     <div className="flex items-center mx-auto mt-3">
-                        <img src={data?.user ? data?.user : team1} className="size-8 rounded-full shadow-md dark:shadow-gray-800" alt=""/>
-                        <Link to="" className="font-semibold block ms-3">{data?.name ? data?.name : 'Calvin Carlo'}</Link>
+                        <img src={data?.user ? data?.user : team1} className="hidden size-8 rounded-full shadow-md dark:shadow-gray-800" alt=""/>
+                        <Link to="" className="hidden font-semibold block ms-3">{data?.name ? data?.name : 'Calvin Carlo'}</Link>
                     </div>
                 </div>
             </div>
@@ -39,32 +40,32 @@ export default function CourseDetail() {
                     <ul className="tracking-[0.5px] mb-0 inline-block mt-4">
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiClock className="text-lg"/>
-                            <span className="text-slate-400 ms-2">4 Semanas</span>
+                            <span className="text-slate-400 ms-2">{data?.lessons ? data?.lessons : 'Numero de lecciones'} Semanas</span>
                         </li>
     
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiWifi className="text-lg"/>
-                            <span className="text-slate-400 ms-2">Principiante</span>
+                            <span className="text-slate-400 ms-2">{data?.knowledge ? data?.knowledge : 'Tipo de conocimientos'}</span>
                         </li>
                         
-                        <li className="inline-flex items-center mt-2 me-5">
+                        <li className="hidden inline-flex items-center mt-2 me-5">
                             <FiBook className="text-lg"/>
                             <span className="text-slate-400 ms-2">16 lecciones</span>
                         </li>
                         
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiBox className="text-lg"/>
-                            <span className="text-slate-400 ms-2">4 Quiz</span>
+                            <span className="text-slate-400 ms-2">{data?.quizzes ? data?.quizzes : 'Numero de pruebas'} Pruebas</span>
                         </li>
                         
                         <li className="inline-flex items-center mt-2 me-5">
                             <FiBookOpen className="text-lg"/>
-                            <span className="text-slate-400 ms-2">56 estudiantes</span>
+                            <span className="text-slate-400 ms-2">{data?.students ? data?.students : 'Numero de pruebas'} estudiantes</span>
                         </li>
                         
                         <li className="inline-flex items-center mt-2">
                             <FiShoppingCart className="text-lg"/>
-                            <Link to="https://1.envato.market/PoligonTek" target="_blank" className="text-violet-600 ms-2">Enroll Now</Link>
+                            <Link to={data?.linkinscribe ? data?.linkinscribe : 'link de inscripcion'} target="_blank" className="text-violet-600 ms-2">Inscribite a este curso</Link>
                         </li>
                     </ul>
                 </div>
@@ -83,14 +84,11 @@ export default function CourseDetail() {
                 <div className="lg:w-3/5">
                     <h5 className="text-2xl font-semibold mb-4">{data?.title ? data?.title : 'Titulo del curso'}</h5>
 
-                <p>
-                {data?.descripcion ? data?.descripcion : 'Descripción del curso'}</p> 
-  
+                    <div className="justify-center mt-6">
+                        {parse(data?.descripcion || '<p>Descripción del curso</p>')}
+                    </div>
 
                     <img src={course2} className="rounded-md shadow mt-4" alt=""/>
-
-      
-    
 
                 </div>
             </div>

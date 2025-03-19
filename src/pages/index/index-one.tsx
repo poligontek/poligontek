@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import Navbar from '../../components/navbar/navbar'
-import Counter from '../../components/counter'
+
 import Partner from '../../components/partner'
 import AboutOne from '../../components/about/about-one'
 
@@ -20,7 +20,7 @@ import team3 from '../../assets/images/team/3.jpg'
 import team4 from '../../assets/images/team/4.jpg'
 import team5 from '../../assets/images/team/5.jpg'
 
-import { FiMonitor } from 'react-icons/fi'
+
 
 import { coursesData } from '../../data'
 import Client from '../../components/client'
@@ -55,9 +55,12 @@ export default function IndexOne() {
 
                             </p>
 
-                            <div className="mt-6">
-                                <Link to="/cursos" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Cursos<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>          <Link to="https://api.whatsapp.com/send/?phone=5492374032946" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Contacto<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
+      
+                            <div className="mt-6 flex justify-center gap-4">
+                                <Link to="/cursos" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Cursos<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
+                                <Link to="https://api.whatsapp.com/send/?phone=5492374032946" className="h-12 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white">Contacto<i className="mdi mdi-arrow-right align-middle ms-1"></i></Link>
                             </div>
+
 
                         </div>
 
@@ -80,17 +83,7 @@ export default function IndexOne() {
                                     </ul>
                                 </div>
 
-                                <div className="absolute md:top-36 top-28 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-52 m-3 mover-2">
-                                    <div className="flex items-center">
-                                        <div className="flex items-center justify-center h-14 min-w-14 bg-violet-600/5 text-violet-600 text-center rounded-full me-3">
-                                            <FiMonitor className="h-6 w-6" />
-                                        </div>
-                                        <div className="flex-1">
-                                            <span className="text-slate-400">Casos de éxito</span>
-                                            <p className="text-xl font-bold"><Counter className="counter-value" value={100}>5</Counter>+</p>
-                                        </div>
-                                    </div>
-                                </div>
+
 
                                 <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tl from-violet-600 to-fuchsia-600 bottom-1/2 translate-y-1/2 md:start-0 start-1/2 md:translate-x-0 -translate-x-1/2 -z-1 shadow-md shadow-violet-600/10 rounded-full"></div>
                             </div>
@@ -132,7 +125,7 @@ export default function IndexOne() {
 
                     <div className="grid md:grid-cols-12 grid-cols-1 mt-6">
                         <div className="md:col-span-12 text-center">
-                            <Link to="/grid" className="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">Ver mas cursos<i className="mdi mdi-arrow-right align-middle"></i></Link>
+                            <Link to="/cursos" className="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">Ver mas cursos<i className="mdi mdi-arrow-right align-middle"></i></Link>
                         </div>
                     </div>
                 </div>
