@@ -15,6 +15,8 @@ const u=ubotw[lang];
 const canonical=site.url+paths[lang];
 const anchors=['servicios','trabajos','proceso','contacto'];
 const projectUrl='https://realfat32.poligontek.com'+paths[lang];
+const contactUrl=site.whatsapp||(site.contactEmail?'mailto:'+site.contactEmail:site.github);
+const contactLabel=site.whatsapp?({es:'Hablemos por WhatsApp',en:'Let’s talk on WhatsApp',pt:'Vamos conversar pelo WhatsApp'})[lang]:(site.contactEmail?t.contactEmail:t.githubContact);
 const locale={es:'es_ES',en:'en_US',pt:'pt_BR'};
 const schema={'@context':'https://schema.org','@type':'Organization',name:'PoligonTek',url:site.url,logo:site.url+'/favicon.svg',sameAs:[site.github],founder:{'@type':'Person',name:'Fabian Gonzalez Dev'},knowsLanguage:['es','en','pt'],hasOfferCatalog:{'@type':'OfferCatalog',name:t.servicesLabel,itemListElement:t.services.map(s=>({'@type':'Offer',itemOffered:{'@type':'Service',name:s.title,description:s.text}}))}};
 ---
@@ -92,7 +94,7 @@ const schema={'@context':'https://schema.org','@type':'Organization',name:'Polig
     <div class="process-grid">{t.steps.map(step=><article><span class="process-marker" aria-hidden="true"></span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
    </section>
    <section class="contact section" id="contacto">
-    <div class="container contact-inner"><div><p class="eyebrow">{t.contactLabel}</p><h2>{t.contactTitle}</h2><p>{t.contactText}</p></div><div class="contact-action"><Button variant="primary" text={site.contactEmail?t.contactEmail:t.githubContact} href={site.contactEmail?'mailto:'+site.contactEmail:site.github} target={site.contactEmail?undefined:'_blank'} /><p>{site.contactEmail||t.contactNote}</p></div></div>
+    <div class="container contact-inner"><div><p class="eyebrow">{t.contactLabel}</p><h2>{t.contactTitle}</h2><p>{t.contactText}</p></div><div class="contact-action"><Button variant="primary" text={contactLabel} href={contactUrl} target="_blank" /><p>{site.phone||t.contactNote}</p>{site.contactEmail&&<a class="text-link" href={'mailto:'+site.contactEmail}>{site.contactEmail}</a>}</div></div>
    </section>
   </main>
   <footer class="site-footer container"><div class="footer-top"><div><Brand /><p>{t.footer}</p></div><div class="footer-links"><a href={site.github} target="_blank" rel="noopener noreferrer">GitHub</a><a href={projectUrl}>RealFat32</a><button type="button" id="open-privacy">{t.privacy}</button><a href="#inicio">{t.top}</a></div></div><div class="footer-bottom"><span>© {new Date().getFullYear()} PoligonTek</span><span>{t.created}</span></div></footer>
