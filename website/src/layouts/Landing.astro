@@ -6,9 +6,12 @@ import Button from '~/components/ui/Button.astro';
 import Headline from '~/components/ui/Headline.astro';
 import {content, languages, paths, type Language} from '~/data/content';
 import {site} from '~/data/site';
+import {ubotw} from '~/data/ubotw';
+import Analytics from '~/components/Analytics.astro';
 interface Props { lang: Language }
 const {lang}=Astro.props;
 const t=content[lang];
+const u=ubotw[lang];
 const canonical=site.url+paths[lang];
 const anchors=['servicios','trabajos','proceso','contacto'];
 const projectUrl='https://realfat32.poligontek.com'+paths[lang];
@@ -23,6 +26,7 @@ const schema={'@context':'https://schema.org','@type':'Organization',name:'Polig
   <title>{t.title}</title>
   <meta name="description" content={t.description} />
   <meta name="author" content="PoligonTek · Fabian Gonzalez Dev" />
+  <meta name="google-site-verification" content="ODlt5Z1duODl_MJbscJF-K-CAP9gppaDymRUnymYS5g" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#2545d4" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -73,9 +77,13 @@ const schema={'@context':'https://schema.org','@type':'Organization',name:'Polig
    <section class="work section" id="trabajos">
     <div class="container">
      <div class="work-heading"><p class="eyebrow">{t.worksLabel}</p><h2>{t.worksTitle}</h2><p class="section-intro">{t.worksIntro}</p></div>
-     <article class="project">
+     <article class="project" data-project="realfat32">
       <div class="project-visual"><div class="project-browser"><div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span>RealFat32</span><span>Windows</span></div><img src={'/images/realfat32-'+lang+'.webp'} alt={t.imageAlt} width="776" height="809" loading="lazy" decoding="async" /></div><span class="project-stamp">FAT32<br/><strong>{t.projectDetails[0]}</strong></span></div>
       <div class="project-copy"><p class="eyebrow">{t.projectLabel}</p><h3>{t.projectTitle}</h3><p>{t.projectDesc}</p><ul class="project-details">{t.projectDetails.map(detail=><li>{detail}</li>)}</ul><Button variant="primary" text={t.projectCta} href={projectUrl} target="_blank" /><a class="text-link source-link" href="https://github.com/poligontek/RealFat32" target="_blank" rel="noopener noreferrer">{t.source}</a><p class="project-alpha">{t.alpha}</p></div>
+     </article>
+     <article class="project project-ubotw" id="ubotw" data-project="ubotw">
+      <div class="project-visual"><a href="https://ubotw.poligontek.com/" target="_blank" rel="noopener noreferrer"><img src="/images/ubotw.webp" alt={u.alt} width="1280" height="720" loading="lazy" decoding="async" /></a></div>
+      <div class="project-copy"><p class="eyebrow">{u.label}</p><h3>{u.title}</h3><p>{u.description}</p><ul class="project-details">{u.details.map(detail=><li>{detail}</li>)}</ul><Button variant="primary" text={u.cta} href="https://ubotw.poligontek.com/" target="_blank" /><a class="text-link source-link" href="https://github.com/fabiangonzalezdev/Universal-BOTW-Save-Manager" target="_blank" rel="noopener noreferrer">{u.source}</a><p class="project-alpha">{u.note}</p></div>
      </article>
     </div>
    </section>
@@ -88,7 +96,8 @@ const schema={'@context':'https://schema.org','@type':'Organization',name:'Polig
    </section>
   </main>
   <footer class="site-footer container"><div class="footer-top"><div><Brand /><p>{t.footer}</p></div><div class="footer-links"><a href={site.github} target="_blank" rel="noopener noreferrer">GitHub</a><a href={projectUrl}>RealFat32</a><button type="button" id="open-privacy">{t.privacy}</button><a href="#inicio">{t.top}</a></div></div><div class="footer-bottom"><span>© {new Date().getFullYear()} PoligonTek</span><span>{t.created}</span></div></footer>
-  <dialog id="privacy-dialog" aria-labelledby="privacy-title"><h2 id="privacy-title">{t.privacy}</h2><p>{t.privacyText}</p><form method="dialog"><Button variant="primary" type="submit" text={t.close} /></form></dialog>
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title"><h2 id="privacy-title">{t.privacy}</h2><p>{t.privacyText}</p><p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google · {t.privacy}</a></p><button type="button" id="analytics-settings" class="text-link">{({es:'Cambiar preferencia de estadísticas',en:'Change analytics preference',pt:'Alterar preferência de estatísticas'})[lang]}</button><form method="dialog"><Button variant="primary" type="submit" text={t.close} /></form></dialog>
+  <Analytics lang={lang} />
   <script>
    const toggle=document.querySelector<HTMLButtonElement>('.menu-toggle');
    const nav=document.getElementById('main-nav');
