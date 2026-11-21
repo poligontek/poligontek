@@ -1,0 +1,25 @@
+site:
+  name: PoligonTek
+  site: 'https://poligontek.com'
+  base: '/'
+  trailingSlash: true
+metadata:
+  title:
+    default: PoligonTek
+    template: '%s · PoligonTek'
+  description: 'Desarrollo de software, aplicaciones y sitios web.'
+  robots:
+    index: true
+    follow: true
+i18n:
+  language: es
+  textDirection: ltr
+apps:
+  blog:
+    isEnabled: false
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null
+ui:
+  theme: 'light:only'
