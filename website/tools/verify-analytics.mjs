@@ -18,7 +18,7 @@ try{
  const response=await received;if(![200,204].includes(response.status()))throw Error('Google rejected Analytics request');
  if(!requests.some(url=>url.includes('id=G-41LSJ1CX69')))throw Error('Incorrect Analytics stream');
  const projectEvent=page.waitForRequest(r=>/google-analytics\.com\/g\/collect/.test(r.url())&&(r.url()+'\n'+(r.postData()||'')).includes('project_click'),{timeout:45000});
- await page.locator('#ubotw .btn-primary').click();await projectEvent;
+ await page.locator('[data-project="realfat32"] .btn-primary').click();await projectEvent;
  await page.locator('#open-privacy').click();await page.locator('#analytics-settings').click();
  await Promise.all([page.waitForNavigation({waitUntil:'networkidle'}),page.locator('[data-consent="denied"]').click()]);
  if(await page.locator('script[src*="googletagmanager"]').count())throw Error('Analytics loaded after revoking consent');

@@ -28,10 +28,8 @@ try{
   check(await page.locator('.project-browser img').evaluate(el=>el.complete&&el.naturalWidth>0),'Localized screenshot loads');
   check(await page.locator('.site-header').evaluate(el=>Math.abs(el.getBoundingClientRect().top)<1),'Navbar remains at top');
   check(await page.locator('[data-project="realfat32"] .btn-primary').getAttribute('href')==='https://realfat32.poligontek.com'+url,'Localized product destination');
-  check(await page.locator('#trabajos article.project').count()===2,'Two actual portfolio projects');
-  check(await page.locator('#ubotw .btn-primary').getAttribute('href')==='https://ubotw.poligontek.com/','UBotW product destination');
-  await page.locator('#ubotw img').evaluate(el=>el.decode());
-  check(await page.locator('#ubotw img').evaluate(el=>el.complete&&el.naturalWidth>0),'UBotW screenshot loads');
+  check(await page.locator('#trabajos article.project').count()===1,'One published portfolio project');
+  check(await page.locator('#ubotw').count()===0,'UBotW omitted from public portfolio');
   if(width===360){await page.locator('.menu-toggle').click();check(await page.locator('.menu-toggle').getAttribute('aria-expanded')==='true','Mobile menu opens');await page.locator('#main-nav a[href="#proceso"]').click();check(await page.locator('.menu-toggle').getAttribute('aria-expanded')==='false','Mobile menu closes after navigation');}
   await page.locator('.language-menu summary').click();const target=lang==='en'?'pt':'en';await page.locator(`.language-options a[lang="${target}"]`).click();await page.waitForURL(base+`/${target}/`);
   check(await page.locator('html').getAttribute('lang')===target,'Language switch navigates to translated page');

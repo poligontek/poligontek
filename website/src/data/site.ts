@@ -4,4 +4,5 @@ export const site = {
   contactEmail: '',
   whatsapp: 'https://wa.me/5491138491425',
   phone: '+54 9 11 3849-1425',
+  showUbotw: false,
 };
