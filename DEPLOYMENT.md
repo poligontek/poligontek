@@ -4,7 +4,7 @@ Primera versión: 21 de noviembre de 2026.
 
 - Proyecto Netlify de prueba: `soft-vacherin-56d640`, equipo `poligonwebs`.
 - URL: https://soft-vacherin-56d640.netlify.app/
-- Fuente local: `D:\Trabajos\PoligonTek\Poligontek\Web`.
+- Fuente local: `D:\Trabajos\PoligonTek\Web`.
 - Método: ZIP manual de los archivos estáticos compilados.
 - El proyecto Netlify existente `poligontek` y el DNS de `poligontek.com` no se modificaron.
 
@@ -39,3 +39,9 @@ Correo contacto@poligontek.com preparado en el asistente de Hostinger usando el 
 ## U-BOTW oculto temporalmente
 
 Por solicitud del usuario, `site.showUbotw` está desactivado. La tarjeta se omite del HTML público en los tres idiomas; se conservan los datos y recursos para trasladar el proyecto a otro sitio. La web independiente de U-BOTW no se modificó. Commit: `96b1582`.
+
+## Unificación de repositorios · 22 de noviembre de 2026
+
+La fuente canónica es `D:\Trabajos\PoligonTek\Web`, vinculada directamente a https://github.com/poligontek/poligontek. Se unieron los historiales local y publicado conservando ambos como ancestros. Los archivos de la landing coinciden con la versión publicada; la aplicación antigua permanece en el historial Git.
+
+Netlify compila ahora desde la raíz (`base = "."`), con Node 24, `npm run build` y salida `dist`. Para publicar: modificar esta carpeta, compilar, hacer commit y push a main. No sincronizar a `website/` ni a `.tools/production-repo`; esas instrucciones anteriores son históricas. Los bundles de respaldo están fuera del repositorio en `D:\Trabajos\PoligonTek\.migration-backups\2026-11-22`.

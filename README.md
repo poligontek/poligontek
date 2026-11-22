@@ -50,4 +50,9 @@ Actualización: WhatsApp ya está publicado, se añadió U-BOTW Save Manager y s
 
 ## Sitio definitivo
 
-Publicado en https://poligontek.com/ con HTTPS y renovación automática. Producción usa el proyecto Netlify poligontek y el repositorio https://github.com/poligontek/poligontek, carpeta website/. La fuente de trabajo permanece aquí; consulta DEPLOYMENT.md para sincronización y DNS. La URL soft-vacherin corresponde únicamente a la vista de prueba anterior. Las 134 comprobaciones también pasaron sobre el dominio definitivo.
+Publicado en https://poligontek.com/ con HTTPS y renovación automática. Producción usa el proyecto Netlify poligontek y el repositorio https://github.com/poligontek/poligontek, raíz del repositorio. Esta es la única fuente de trabajo y publicación; consulta DEPLOYMENT.md para DNS e historial. La URL soft-vacherin corresponde únicamente a la vista de prueba anterior. Las 134 comprobaciones también pasaron sobre el dominio definitivo.
+
+## Unified working copy · 2026-11-22
+
+Canonical local repository: `D:\Trabajos\PoligonTek\Web`.
+Use this folder in GitHub Desktop (File → Add local repository). The Git history and existing local changes were preserved during consolidation.
