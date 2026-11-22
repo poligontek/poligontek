@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.tools/
+.site-artifacts/
+.env*
+netlify-deploy.zip
+netlify-production.zip

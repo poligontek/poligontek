@@ -1,0 +1,15 @@
+---
+import type {Language} from '~/data/content';
+interface Props {lang: Language}
+const {lang}=Astro.props;
+const text={
+ es:{title:'Privacidad y estadísticas',body:'Con tu permiso, Google Analytics nos ayuda a entender las visitas y los clics en nuestros proyectos. Puedes aceptar, rechazar o cambiar tu elección en cualquier momento.',accept:'Aceptar estadísticas',reject:'Rechazar estadísticas',settings:'Cambiar preferencia de estadísticas',google:'Privacidad de Google'},
+ en:{title:'Privacy and analytics',body:'With your permission, Google Analytics helps us understand visits and clicks on our projects. You can accept, reject or change your choice at any time.',accept:'Accept analytics',reject:'Reject analytics',settings:'Change analytics preference',google:'Google privacy policy'},
+ pt:{title:'Privacidade e estatísticas',body:'Com sua permissão, o Google Analytics nos ajuda a entender visitas e cliques nos nossos projetos. Você pode aceitar, recusar ou mudar sua escolha a qualquer momento.',accept:'Aceitar estatísticas',reject:'Recusar estatísticas',settings:'Alterar preferência de estatísticas',google:'Privacidade do Google'},
+}[lang];
+---
+<aside id="analytics-consent" class="analytics-consent" aria-labelledby="analytics-title" hidden>
+ <h2 id="analytics-title">{text.title}</h2><p>{text.body}</p>
+ <div class="consent-actions"><button type="button" class="consent-accept" data-consent="granted">{text.accept}</button><button type="button" data-consent="denied">{text.reject}</button><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">{text.google}</a></div>
+</aside>
+<script src="../scripts/analytics.ts"></script>
